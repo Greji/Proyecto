@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/btn_rmregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="@color/colorPrimary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Registro mensual"/>
+
+    </Toolbar>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/btn_registromes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_gfuerza"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:text="Ver gráfica de fuerza"
+            android:layout_marginTop="360dp"
+            android:layout_marginStart="240dp"/>
+
+        <Button
+            android:id="@+id/btn_gtiempo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:text="Ver gráfica de tiempo"
+            android:layout_marginTop="430dp"
+            android:layout_marginStart="240dp"/>
+
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

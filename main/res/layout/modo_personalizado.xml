@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/mperregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="@color/colorPrimary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Modo Personalizado"/>
+
+    </Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        android:textSize="10dp"
+        android:text="Minutos        Segundos"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/mper_minutos"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_marginStart="135dp"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text=":"/>
+
+        <EditText
+            android:id="@+id/mper_segundos"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mper_visual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:text="VISUAL"
+            />
+
+        <Button
+            android:id="@+id/mper_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
+            android:text="AUDIO"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/mper_testimulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo entre estímulo"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="75dp"
+            android:textColor="#B7B8BA"
+            />
+
+        <EditText
+            android:id="@+id/text_mpertestimulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:ems="2"
+            android:inputType="number"
+            android:text="00"
+            android:textColor="#B7B8BA"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="250dp"/>
+
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costado izquierdo cabeza"
+            android:layout_marginStart="80dp"
+            android:textColor="#B7B8BA"/>
+
+        <Switch
+            android:id="@+id/switch_mperizcab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:textColorLink="#08AE9E"
+            android:checked="true"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costado derecho cabeza"
+            android:layout_marginStart="80dp"
+            android:textColor="#B7B8BA"/>
+
+        <Switch
+            android:id="@+id/switch_mperdercab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:textColorLink="#08AE9E"
+            android:checked="true"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch_mpercara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:textColorLink="#08AE9E"
+            android:checked="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara"
+            android:textColor="#B7B8BA"
+            android:layout_marginStart="80dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch_mperpecho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:textColorLink="#08AE9E"
+            android:checked="true"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="Pecho"
+            android:textColor="#B7B8BA"
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch_mperestomago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:textColorLink="#08AE9E"
+            android:checked="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estómago"
+            android:textColor="#B7B8BA"
+            android:layout_marginStart="80dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch_mperiztorso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:textColorLink="#08AE9E"
+            android:checked="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="Costado izquierdo torso"
+            android:textColor="#B7B8BA" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch_mperdertorso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:textColorLink="#08AE9E"
+            android:checked="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costado derecho torso"
+            android:textColor="#B7B8BA"
+            android:layout_marginStart="80dp"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="15dp">
+
+        <Button
+            android:id="@+id/mper_play"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#08AE9E"
+            android:drawableLeft="@drawable/ic_play_arrow"/>
+
+        <Button
+            android:id="@+id/mper_pause"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:backgroundTint="#08AE9E"
+            android:drawableLeft="@drawable/ic_pause"/>
+
+        <Button
+            android:id="@+id/mper_stop"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="#08AE9E"
+            android:drawableLeft="@drawable/ic_stop"/>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

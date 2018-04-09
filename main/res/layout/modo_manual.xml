@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/btn_mmregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="@color/colorPrimary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Modo Manual"/>
+
+    </Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:textSize="10dp"
+        android:text="Minutos        Segundos"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Chronometer
+            android:id="@+id/mm_minutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="40dp" />
+
+        <Chronometer
+            android:id="@+id/mm_segundos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mm_visual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:text="VISUAL"
+            />
+
+        <Button
+            android:id="@+id/mm_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
+            android:text="AUDIO"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+
+        <Button
+            android:id="@+id/mm_btnizcabeza"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:textSize="13dp"
+            android:text="Costado izquierdo cabeza"
+            android:layout_marginStart="30dp"/>
+
+        <Button
+            android:id="@+id/mm_btndercabeza"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:textSize="13dp"
+            android:text="Costado derecho cabeza"
+            android:layout_marginStart="200dp"/>
+
+        <Button
+            android:id="@+id/mm_btncara"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:text="Cara"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"/>
+
+        <Button
+            android:id="@+id/mm_btnpecho"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:text="Pecho"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="60dp"/>
+
+        <Button
+            android:id="@+id/mm_btniztorso"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:text="Costado izquierdo torso"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="120dp"/>
+
+        <Button
+            android:id="@+id/mm_btndertorso"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:text="Costado derecho torso"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="120dp"/>
+
+        <Button
+            android:id="@+id/mm_btnestomago"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:text="Estómago"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="180dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp">
+
+        <Button
+            android:id="@+id/mm_play"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#08AE9E"
+            android:drawableLeft="@drawable/ic_play_arrow"/>
+
+        <Button
+            android:id="@+id/mm_pause"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:backgroundTint="#08AE9E"
+            android:drawableLeft="@drawable/ic_pause"/>
+
+        <Button
+            android:id="@+id/mm_stop"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="#08AE9E"
+            android:drawableLeft="@drawable/ic_stop"/>
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

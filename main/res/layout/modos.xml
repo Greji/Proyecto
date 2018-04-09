@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/btn_mregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="@color/colorPrimary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Modos"/>
+
+    </Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="100dp"
+        android:text="MODOS DE ENTRENAMIENTO"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btn_predeterminado"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:text="PREDETERMINADO"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#08AE9E"/>
+
+
+    <Button
+        android:id="@+id/btn_manual"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:text="MANUAL"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <Button
+        android:id="@+id/btn_personalizado"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:text="PERSONALIZADO"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#08AE9E"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

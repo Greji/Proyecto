@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/btn_auregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="regresar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="GRECS"/>
+
+    </Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="85dp"
+        android:textSize="25dp"
+        android:textColor="#B4BBCE"
+        android:text="Nombre de Usuario:"/>
+
+    <EditText
+        android:id="@+id/nuevonombre"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="85dp"
+        android:text="Ej. Usuario1"
+        android:textColor="#798487"/>
+
+    <Button
+        android:id="@+id/btn_ag"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:text="AGREGAR USUARIO"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#08AE9E"
+        />
+
+
+</LinearLayout>
